@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Animodules</string>
+    <string name="create_animodule">Create Animodule </string>
+    <string name="exit">Exit </string>
+    <string name="achieve">Achievements </string>
+    <string name="setting">Settings</string>
+    <string name="designs">designs</string>
+    <string name="flowers">flowers</string>
+    <string name="save">SAVE</string>
+    <string name="main">MAIN MENU</string>
+    <string name="share">share</string>
+    <string name="all">all</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="register">Register</string>
+    <string name="login">Login</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="registration">Registration</string>
+    <string name="next">NEXT</string>
+    <string name="library">Library</string>
+    <string name="complete">Complete</string>
+    <string name="header">Help with Attaching Animodule Body Parts.</string>
+    <string name="title_activity_head_design">HeadDesignActivity</string>
+    <string name="ear">Ear</string>
+    <string name="signup">Sign up</string>
+    <string name="non_violent_superheroes">Non-Violent Superheroes</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="passwordconfirm">Confirm Password</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="logout">Logout</string>
+    <string name="enteremail">Please enter your email address so we can send you a link to reset your password.</string>
+    <string name="forgotpass"><a href="#">Forgot your password?</a></string>
+    <string name="send">Send</string>
+    <string name="emailAddress">Email Address</string>
+    <string name="terms">By signing in, you agree to our <a href="#">Terms of use</a></string>
+    <string name="backgrounds">back- \n grounds</string>
+    <string name="reset">RESET</string>
+    <string name="color">Color</string>
+    <string name="combine">Combine</string>
+    <string name="clear">Clear</string>
+
+
+</resources>

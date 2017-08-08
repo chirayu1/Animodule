@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.apps.saad.animodule.ElephantDesignActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/top_button_shape"
+            android:text="@string/main"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/savebt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/top_button_shape"
+            android:text="@string/save"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/top_button_shape"
+            android:text="@string/combine"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/designedHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white">
+
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/blank1"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/blank"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/elephantheadcutout"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephantheadcutout" />
+
+        <com.apps.saad.animodule.PaintPotView
+            android:id="@+id/drawingPad_v"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/designedEar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/blank2"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/blank"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/elephantearcutout"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephantearcutout" />
+
+        <com.apps.saad.animodule.PaintPotView
+            android:id="@+id/drawingPad_v2"
+            android:layout_width="210dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/designedFrontLegs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/blank3"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/blank"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/elephantfrontlegscutout"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephantfrontlegscutout" />
+
+        <com.apps.saad.animodule.PaintPotView
+            android:id="@+id/drawingPad_v3"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/designedTorso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/blank4"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/blank"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/elephanttorsocutout"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="220dp"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephanttorsocutout" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="0dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/blank" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="520dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/blank" />
+
+        <com.apps.saad.animodule.PaintPotView
+            android:id="@+id/drawingPad_v4"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/designedBackLegs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@android:color/white"
+        android:visibility="gone">
+
+        <com.github.chrisbanes.photoview.PhotoView
+            android:id="@+id/blank5"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:foregroundGravity="center"
+            android:scaleType="center"
+            android:src="@drawable/blank"
+            android:visibility="visible" />
+
+
+        <ImageView
+            android:id="@+id/elephantbacklegscutout"
+            android:layout_width="270dp"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/elephantbacklegscutout" />
+
+        <com.apps.saad.animodule.PaintPotView
+            android:id="@+id/drawingPad_v5"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:foregroundGravity="center"
+
+            android:scaleType="fitXY"/>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/linearLayout"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/elephanthead"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/clicked_parts_button_shape"
+            android:text="Head/Trunk"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/elephantears"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parts_button_shape"
+            android:text="Ears"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/elephantfrontlegs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parts_button_shape"
+            android:text="Front Legs"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/elephanttorso"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parts_button_shape"
+            android:text="Torso"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/elephantbacklegs"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parts_button_shape"
+            android:text="Back Legs"
+            android:textColor="@android:color/white" />
+        <!--
+        <Button
+            android:id="@+id/done"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/parts_button_shape"
+            android:text="done"
+            android:textColor="@android:color/black" />
+         -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/designs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/clicked_design_button_shape"
+            android:text="@string/designs"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/color"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/color_button_shape"
+            android:text="@string/color"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/background_button_shape"
+            android:text="@string/backgrounds"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/layout_background"
+        android:paddingBottom="2dp">
+
+        <HorizontalScrollView
+            android:id="@+id/tags"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <LinearLayout
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/and1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/and1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Andarika"
+                        android:textColorLink="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/henna1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/henna1" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Henna"
+                        android:textColorLink="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/mandala1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:background="@android:color/transparent"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/mandala1" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="Mandalas"
+                        android:textColorLink="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/ands"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/and3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/and5"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/and7"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/hennas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/henna2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/henna3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/henna4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/mandalas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <ImageView
+                    android:id="@+id/mandala2"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/mandala3"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/mandala4"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:scaleType="fitXY" />
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <HorizontalScrollView
+            android:id="@+id/backgrounds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <Button
+                    android:id="@+id/bred"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_red_dark"
+                    android:scaleType="fitXY"
+                    android:text="RED" />
+
+                <Button
+                    android:id="@+id/bblue"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_blue_dark"
+                    android:scaleType="fitXY"
+                    android:text="BLUE" />
+
+                <Button
+                    android:id="@+id/bgreen"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/holo_green_dark"
+                    android:scaleType="fitXY"
+                    android:text="GREEN" />
+
+                <Button
+                    android:id="@+id/byellow"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/coloryellow"
+                    android:scaleType="fitXY"
+                    android:text="YELLOW" />
+
+                <Button
+                    android:id="@+id/bgray"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/darker_gray"
+                    android:scaleType="fitXY"
+                    android:text="GRAY" />
+
+                <Button
+                    android:id="@+id/bmagenta"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@color/magenta"
+                    android:scaleType="fitXY"
+                    android:text="MAGENTA" />
+
+                <Button
+                    android:id="@+id/bclear"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:scaleType="fitXY"
+                    android:text="@string/clear" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/paintlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="1dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/dotSize_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Brush Size = "
+                        android:textAlignment="center"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/dotSizePlus_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="+" />
+
+                    <Button
+                        android:id="@+id/dotSizeMinus_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-" />
+
+                    <Button
+                        android:id="@+id/undo_b"
+                        android:layout_width="80dp"
+                        android:layout_height="50dp"
+                        android:scaleType="fitXY"
+                        android:text="UNDO" />
+
+                    <Button
+                        android:id="@+id/reset_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="RESET" />
+
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalscrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/red_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ff0000"
+                        android:text="RED" />
+
+                    <Button
+                        android:id="@+id/blue_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#1237ff"
+                        android:text="BLUE" />
+
+                    <Button
+                        android:id="@+id/green_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00ff01"
+                        android:text="GREEN" />
+
+                    <Button
+                        android:id="@+id/yellow_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffff00"
+                        android:text="YELLOW" />
+
+                    <Button
+                        android:id="@+id/pink_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ff00ff"
+                        android:text="PINK" />
+
+                    <Button
+                        android:id="@+id/gray_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#808080"
+                        android:text="GRAY" />
+
+                    <Button
+                        android:id="@+id/black_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#000000"
+                        android:text="BLACK"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/white_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="WHITE" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/backarrow"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:paddingTop="4dp"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            app:srcCompat="@drawable/backarrow" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.apps.saad.animodule.CreateActivity">
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="285dp">
+        <ImageView android:layout_width="50dp" android:layout_height="50dp"
+            android:id="@+id/image" android:src="@drawable/henna2">
+        </ImageView>
+        <ImageView android:layout_y="30dp" android:layout_x="118dp"
+            android:layout_width="50dp" android:layout_height="50dp" android:id="@+id/image1"
+            android:src="@drawable/henna3">
+        </ImageView>
+    </RelativeLayout>
+</LinearLayout>
